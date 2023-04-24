@@ -1,0 +1,7 @@
+<!-- INSERT COMMENT HERE -->
+<section class="wrapper style1 align-*LEFT, CENTER, OR RIGHT*">
+	<div class="inner">
+		<!-- hX IS CHANGEABLE -->
+		<h2>*HEADER*</h2> 
+		<p>*BODY*</p>
+	</div>
