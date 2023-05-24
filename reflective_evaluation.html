@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="shh()">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -34,7 +34,26 @@
 							<img src="images/Hand assembled.jpg" alt="" />
 						</div>
 					</section>
-        
+        	
+				<button id="theButton" align="center" onClick="myFunction()">Please do not click me. Only new and different bad things can come from clicking me</button>
+				<div id="secrets">
+					<section class="wrapper style1 align-center">
+						<h1>Whoops!... well, no point crying over spilt milk. Enjoy some totally unrelated lyrics and music to make it up to yourself</h1>
+						<quoteblock>
+							Dear Alexander<br>
+							I am slow to anger<br>
+							But I toe the line<br>
+							As I reckon with the effects<br>
+							Of your life on mine<br>
+							I look back on where I failed<br>
+							And in every place I checked<br>
+							The only common thread has been your disrespect<br>
+							<br>
+							"Your Obedient Servant" by Lin Manuel Miranda<br>
+						</quoteblock>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/V6_qvZFRlJQ?start=35&end=59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+				</div>
 				
         <!-- Button -->
 					<section class="wrapper style1 align-center">
@@ -53,6 +72,16 @@
 		
 
 		<!-- Scripts -->
+			<script>
+				function tada() {
+					document.getElementById("secrets").removeAttribute("hidden", true); 
+					document.getElementById("theButton").setAttribute("hidden", true);
+				}
+			</script>
+			<script>
+				fucntion shh() {
+					document.getElementById("secrets").setAttribute("hidden", true);	
+				}
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
