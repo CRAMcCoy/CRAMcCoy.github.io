@@ -1,0 +1,9 @@
+					<section class="spotlight style2 orient-right content-align-left color5">
+						<div class="content">
+							<h2>Why did I blah blah blah?</h2>
+							<p>paragraph here</p>
+						</div>
+						<div class="image">
+							<img src="images/QMark.jpg" alt>
+						</div>
+				</section>
