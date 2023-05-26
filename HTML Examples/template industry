@@ -1,9 +1,12 @@
-					<section class="spotlight style2 orient-right content-align-left color3">
-						<div class="content">
-							<h2>Why did I blah blah blah?</h2>
-							<p>paragraph here</p>
-						</div>
-						<div class="image">
-							<img src="images/industry.jpg" alt>
-						</div>
-				</section>
+<!--IE-->
+			<section class="spotlight style2 orient-right content-align-left color3">
+				<div class="content">
+					<h2>Industrial Example: </h2>
+					
+					<p></p>
+				</div>
+				
+				<div class="image">
+					<img src="images/industry.jpg" alt>
+				</div>
+			</section>
