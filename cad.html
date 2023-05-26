@@ -24,59 +24,189 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+		<div id="wrapper" class="divided">
 
-				<!-- One -->
-					<section class="banner style1 orient-left fullscreen content-align-left halfscreen image-position-right onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Portfolio: Computer Aided Design</h1>
-								<a href="index.html" class="button primary fit big smooth-scroll-middle">Back to main page</a>
-						</div>
-						<div class="image">
-							<img src="images/Hand assembled.jpg" alt="" />
-						</div>
-					</section>
-        
-        <!-- Quote -->
-				<section>
-					<div class="content">
-						<blockquote align="center">
-							Computer assisted design<br>
-              See how you get from a thought to an object<br>
-              Computer assisted design<br>
-              It takes an idea, and makes 3D stuff<br>
-              Computer. Assisted. Design.<br>
-							<br>
-							"Computer Assisted Design" by They Might Be Giants
-						</blockquote>
-						<p align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/DiLczlKGLhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </p>
-					</div>
-				</section>
+			<!-- One -->
+			<section class="banner style1 orient-left fullscreen content-align-left halfscreen image-position-right onload-image-fade-in onload-content-fade-right">
+				<div class="content">
+					<h1>Portfolio: Computer Aided Design</h1>
+					<a href="index.html" class="button primary fit big smooth-scroll-middle">Back to main page</a>
+				</div>
+				<div class="image">
+					<img src="images/Hand assembled.jpg" alt="" />
+				</div>
+			</section>
+			
+			<!-- Quote -->
+			<section>
+				<div class="content">
+					<blockquote align="center">
+						Computer assisted design<br>
+						See how you get from a thought to an object<br>
+						Computer assisted design<br>
+						It takes an idea, and makes 3D stuff<br>
+						Computer. Assisted. Design.<br>
+						<br>
+						"Computer Assisted Design" by They Might Be Giants
+					</blockquote>
+					<p align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/DiLczlKGLhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </p>
+				</div>
+			</section>
 				
-        <!-- Button -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<a href="fabrication.html" class="button primary fit big">Next page: Fabrication</a>
-						</div>
-					</section>
+			
+			<!-- intro -->
+			<section class ="wrapper style1 align-center">
+				<div class="header">
+					<p></p>
+				</div>
+				
+				<div class="content align-left inner">
+					<p>Next, there was the challenge of how to design the internal structure, to fit with the specification.</p>
+					
+					<h3><br>Note to reader:</h3>
+					<p>This section will justify decisions in-text throughout, rather than at the end, due to the large number of choices made.</p>
+					
+					<p><br>First, the hand scan was analysed to obtain the appropriate measurements for the internal structure. It was decided that all 5 fingers would be the same length, to improve repairability by introducing modularity. Therefore, the fingers were designed to be shorter than the distance between the knuckle joint and the end of the pinkie finger. The thumb was obviously shorter than this, but the thumb was too short to take as a base measure and used for the other fingers so, the thumb joint will be nested further into the palm. Furthermore, as per the specifications of the final product, the internal structure does not need to match the aesthetics of the original hand, so small alterations can reasonable be made, if they give some technical benefit.</p>
+					
+					<p align="center"> <script src="https://embed.github.com/view/3d/CameronMcCoy/CameronMcCoy.github.io/main/CAD Files/hollow scanned hand.stl?height=400&width=400"></script> </p>
+					<h4 align="center">Figure 11: STL file of hollowed hand</h4>
+				
+					<p>Next, the scan of the hand was hollowed, with a resulting skin thickness of 5mm (see figure 11) to obtain some measurements regarding how big the fingers of the printed hand could be. Since the exoskeleton would wrap around the internal structure, it was decided that it was fine if the fingers slightly intersect with the hollow skin’s 5mm skin, so long as they did not extend past the limits of the finger. This was done to allow for designed fingers to be thick enough to maximise strength, whilst still leaving the exoskeleton</p>
+				</div>
+			</section>
+			
+			
+			
+			
+			<!--FINGER-->
+			<section class="wrapper style1 align-left">
+				<div class="header">
+					<h1>Finger Design</h1>
+				</div>
+				
+				<div class="content align-left inner">
+					<p align="center"> <script src="https://embed.github.com/view/3d/CameronMcCoy/CameronMcCoy.github.io/main/CAD Files/finger version 2.stl?height=800&width=800"></script> </p>
+					<h4 align="center">Figure 11: Final Finger Design</h4>
+					
+					<p>The first design decision was to add a smooth, filleted base to the front of the finger (as seen in figure 12). Since methods of moving the finger were discussed but never finalised, this was an easy way to allow for an actuator to push up and slide the finger into an upright position, without causing significant wear and tear, and allowing for a smooth motion, rather than the finger jerking at a joint.</p>
+				
+					<img src="images/Finger base.jpg" alt="Figure 12: Finger base" height="50%"/>
+					<h4>Figure 12: Finger base</h4>
+				
+					<p>Next, the length of the finger was given a design which made use of the principle of complaint mechanisms, which use the properties of the material to provide a pseudo hinge and provide some flexibility, while maintaining a solid form. Seen here: <a href="https://www.thingiverse.com/thing:3491887">Thingiverse.com (2019)</a>. This also gave many areas along the finger where the exoskeleton can be attached.</p>
+					
+					<p>Furthermore, this design also gives a slight amount of stretch to the fingers (as seen here: <a href="https://www.thingiverse.com/thing:1616078">Thingiverse.com (2016)</a>)</p>
+					
+					<p>Using springs to provide this jointless flexibility (seen here: <a href="https://www.thingiverse.com/thing:92266">Thingiverse.com (2013)</a> was considered, but this would have allowed for bidirectional movement, rather than unidirectional. Therefore, the final design used a design akin to the sigmoid curve in terms of its pattern, and a solid, flat width (as seen in figure 13) which made it unidirectional and made it much simpler to 3D print.</p>
+					
+					<img src="images/Finger curve.jpg" alt="Figure 13: Finger length design" height="50%"/>
+					<h4>Figure 13: Finger length design</h4>
+					
+					<p>Also, due to this addition of complaint mechanisms it was even more critical that the fingers be made same length and easily replaceable due to low durability due to the complaint mechanisms. More flexibility in the finger rather than joints throughout makes a less complex system, which is less modular, which is not needed as per the component specifications. Complaint mechanisms were also much better because more joints would have massively increased the number of repairs.</p>
+					
+					<p>Moreover, more joints, fingers, and internal finger lengths would have been made further production much more expensive (which will be discussed in the reflective evaluation chapter).</p>
+					
+					<p>Finally, the finger’s edges were chamfered to ensure that there were no sharp edges, which could have been damaging to the exoskeleton and the silicon skin which this internal structure will be married to.</p>
+					
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			<!--PALM-->
+			<section class="wrapper style1 align-left">
+				<div class="header">
+					<h1>Palm Design</h1>
+				</div>
+				
+				<div class="content align-left inner">
+					<p align="center"> <script src="https://embed.github.com/view/3d/CameronMcCoy/CameronMcCoy.github.io/main/CAD Files/Hand Palm.stl?height=800&width=800"></script> </p>
+					<h4 align="center">Figure 14: Palm design</h4>
+					
+					<p>As discussed earlier, the thumb joint was depressed lower into the palm than it otherwise would have been if the fingers had been made different lengths. Furthermore, the finger joints were also made level, which does not match the scanned hand’s bridge, however this will be rectified by the exoskeleton and the silicon skin. Furthermore, the majority on the unevenness between the finger bases are due to the hand being splayed, since when a real hand moved the fingers to make a 90o angle the knuckle bridge makes a much straighter line, indicating that the large different is due to the skin and tissue surrounding the hand.</p>
+					
+					<p>Holes were added to the palm, since (as discussed previously) there was discussion regarding the ability to move the hand. Thus, the holes would allow for cabling and wiring to be fed from one side of the palm to the other, for either a mechanical or an electronic solution. These holes were also made small enough that they do not meaningly decrease the strength of the palm, especially due to the solid thickness of the sub-component.</p>
+					
+					<p>These holes also allow for the palm to be screwed to a laser cutter bed, in case there are alterations which need to be made to the product. This could save on time and material since the sub-component may not need to be 3D printed again.</p>
+					
+					<p>Also, the material at the finger joints was chamfered to reduce the risk of the silicon skin getting caught in the mechanism and being pinches and damaged.</p>
+					
+					<p>Finally, the word “back” was added to the back side of the palm, to indicate during assembly which way around the hand is supposed to be oriented, which may reduce the risk of damaging the sub-component later in the project, when the internal structure was added to the exoskeleton.</p>
+				</div>
+			</section>
+			
+			
+			
+			
+			<!--PALM-->
+			<section class="wrapper style1 align-left">
+				<div class="header">
+					<h1>Joint Design</h1>
+				</div>
+				
+				<div class="content align-left inner">
+					<p>3D printing pins into the design was considered but was discarded due to the weak points it creates, mainly due to the friction caused by 3d printing not being able to replicate circled very well, especially given the “stringy” nature of PLA (which will be discussed in the next chapter).</p>
+					
+					<p>This friction would have caused uneven wear on the pins, and lead to inconsistent rigidity in the joints and harmed the possibility. Problems with pins can be seen in this example: <a href="https://www.thingiverse.com/thing:2412">Thingiverse.com (2010)</a></p>
+					
+					<p>Another consideration was to make the joint holes much smaller and use filament strands to connect the fingers and the palm, however it would have been incredibly weak, and had a relatively large amount of friction which likely would have resulted in the strand splintering, which may have damaged the joint hole and required cleaning to remove the filament shards.</p>
+					
+					<p>Thus, the holes were made relatively large and brass screws were used to connect the palm and the fingers. The material is very receptive to lubrication due to its porous nature, and often also chemically resistant due to its magnesium content.</p>
+				</div>
+			
+				
+				
+				
+				
+			
+			<!--Ex-->
+			<section class="spotlight style2 orient-right content-align-left color7">
+				<div class="content">
+					<h2>Experiment: Using Fusion360 to Create Solid Form</h2>
+					
+					<p>Initially I had tried to use fusion360 to convert the hand scan from a mesh into a solid form. However due to the way that fusion360 created solids from meshes this became impossible, due to the scan’s STL file having over 60,000 faces. Thus, the mesh was simplified to a lower number of faces. However, it was still impossible because it became evident that the scanner encodes the triangulation data into meshes, without checking for face intersection, so fusion360 could not create a solid form from the STL file. So, an older AutoDesk software called Meshmixer was used, which despite no longer receiving support allowed for a solid to be created, which allowed for the processing previously discussed to be achieved.</p>
+				</div>
+				
+				<div class="image">
+					<img src="images/Experiment.jpg" alt>
+				</div>
+			</section>
+			
+			
+				
+				
+				
+				
+				
+			
+			<!-- Button -->
+			<section class="wrapper style1 align-center">
+				<div class="inner">
+					<a href="fabrication.html" class="button primary fit big">Next page: Fabrication</a>
+				</div>
+			</section>
         
-        <!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<p>Portfolio of Cameron McCoy. Libraries developed by: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
-			</div>
+			<!-- Footer -->
+			<footer class="wrapper style1 align-center">
+				<div class="inner">
+					<p>Portfolio of Cameron McCoy. Libraries developed by: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</div>
+			</footer>
+		</div>
 		
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
