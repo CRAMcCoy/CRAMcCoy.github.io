@@ -1,9 +1,12 @@
-					<section class="spotlight style2 orient-right content-align-left color7">
-						<div class="content">
-							<h2>Experiment: </h2>
-							<p>blah blah blah</p>
-						</div>
-						<div class="image">
-							<img src="images/Experiment.jpg" alt>
-						</div>
-				</section>
+<!--Ex-->
+			<section class="spotlight style2 orient-right content-align-left color7">
+				<div class="content">
+					<h2>Experiment: </h2>
+					
+					<p></p>
+				</div>
+				
+				<div class="image">
+					<img src="images/Experiment.jpg" alt>
+				</div>
+			</section>
